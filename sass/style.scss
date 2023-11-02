@@ -1,0 +1,17 @@
+@import "navbar";
+@import "variables";
+
+*{
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black; //CAMBIAR (TESTEO)
+    font-family: 'Montserrat', sans-serif;
+}
