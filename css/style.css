@@ -78,10 +78,16 @@
   }
 }
 @media (min-width: 914px) {
+  #navbar a i {
+    display: initial;
+  }
   .navbar__content {
     display: flex;
     justify-content: end;
     padding: 50px;
+  }
+  .navbar__content #navbar__cart {
+    display: none;
   }
   .navbar__content .navbar__list {
     width: 150%;
