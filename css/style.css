@@ -1,13 +1,11 @@
 #navbar {
+  justify-content: center;
   font-size: 25px;
   display: flex;
   width: 100%;
   height: 100px;
   background-color: #272727;
   position: fixed;
-}
-#navbar a i {
-  display: none;
 }
 #navbar i {
   cursor: pointer;
@@ -86,9 +84,6 @@
     justify-content: end;
     padding: 50px;
   }
-  .navbar__content #navbar__cart {
-    display: none;
-  }
   .navbar__content .navbar__list {
     width: 150%;
     display: flex;
@@ -100,6 +95,9 @@
     background-color: rgba(0, 0, 0, 0);
     height: 10vh;
     gap: 2rem;
+  }
+  .navbar__button--hidden a {
+    display: none;
   }
   .check__btn {
     display: none;
