@@ -131,6 +131,11 @@
   color: #e70000;
 }
 
+@media (max-width: 914px) {
+  .hero__content {
+    width: 70%;
+  }
+}
 * {
   justify-content: center;
   align-items: center;

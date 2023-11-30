@@ -58,6 +58,8 @@
     color: var.$button-hover;
 }
 
-@media (min-width: 914px){
-
+@media (max-width: 914px){
+    .hero__content{
+        width: 70%;
+    }
 }
