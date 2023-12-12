@@ -8,6 +8,8 @@ iconoMenu.addEventListener("click", () =>{
 
 window.addEventListener("resize", () =>{
 
+    menu.classList.add("disabled")
+
     const width = window.innerWidth
 
     if (width > 914 && menu.classList.contains("disabled"))

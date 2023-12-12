@@ -84,3 +84,26 @@ const products = [
         img: "../src/products/RAM/memoria-sodimm-32gb-ddr5-4800-adata-0.jpg",
     }
 ]
+
+const productos = document.querySelector("#products")
+
+const renderProductos = (render) => {
+
+        let contentHTML = ``
+        for (let i = 0; i < products.length; i++) {
+            const productsArray = products[i]
+            contentHTML += `
+            <div class="products__content">
+            <img src="${productsArray.img}" alt="${productsArray.nombre}">
+            <div>
+                <h2>${productsArray.nombre}</h2>
+                <p class="products__price">$${productsArray.precio}</p>
+                <p class="products__cart"><i class="bx bxs-cart"> Agregar al carrito</i></p>
+            </div>
+        </div>
+        `   
+        }
+        render.innerHTML = contentHTML
+}
+
+renderProductos(productos)
