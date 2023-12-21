@@ -1,4 +1,4 @@
-@use "var";
+@use "var" as *;
 
 #cart{
     display: flex;
@@ -6,7 +6,7 @@
     height: 100%;
     padding-top: 500px;
     border: solid red;
-    color: var.$primary-color;
+    color: $primary-color;
 
     img{
         max-width: 250px;
