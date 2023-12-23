@@ -119,7 +119,6 @@ cartAddElements.forEach((cartAddElement, i) => {
         carritoAdd[i] = products[i]
 
         if (carritoAdd[i]){
-            console.log(carritoAdd[i])
             carritoAdd[i].cantidad = (carritoAdd[i].cantidad || 0) + 1
         } else {
             carritoAdd[i] = {...products[i], cantidad: 1}
