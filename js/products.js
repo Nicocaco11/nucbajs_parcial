@@ -85,7 +85,9 @@ const products = [
     }
 ]
 
-const productos = document.querySelector("#products")
+document.addEventListener("DOMContentLoaded", () => {
+
+    const productos = document.querySelector("#products")
 
 const renderProductos = (render) => {
 
@@ -107,3 +109,24 @@ const renderProductos = (render) => {
 }
 
 renderProductos(productos)
+
+
+const cartAddElements = document.querySelectorAll(".products__cart");
+let carritoAdd = JSON.parse(localStorage.getItem("carrito")) || {};
+
+cartAddElements.forEach((cartAddElement, i) => {
+    cartAddElement.addEventListener("click", () => {
+        carritoAdd[i] = products[i]
+
+        if (carritoAdd[i]){
+            console.log(carritoAdd[i])
+            carritoAdd[i].cantidad = (carritoAdd[i].cantidad || 0) + 1
+        } else {
+            carritoAdd[i] = {...products[i], cantidad: 1}
+        }
+
+        localStorage.setItem("carrito", JSON.stringify(carritoAdd));
+    });
+});
+
+})
