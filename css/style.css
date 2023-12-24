@@ -62,6 +62,37 @@
   .nav__content--disabled {
     display: initial; } }
 @use "var" as *;
+#form {
+  display: flex;
+  margin-top: 550px;
+  margin-bottom: 250px;
+  font-family: 'Cabin', sans-serif;
+  color: white; }
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px; }
+  .form__content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+  .form__content h2 {
+    font-size: 30px; }
+  .form__content input {
+    width: 300px; }
+
+#descripcion {
+  width: 300px;
+  height: 100px; }
+
+@use "var" as *;
+#footer {
+  display: flex;
+  color: white; }
+
+@use "var" as *;
 #about {
   margin-top: 200px;
   margin-bottom: 300px;

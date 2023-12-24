@@ -49,6 +49,32 @@
         </div>
     </section>
 
+    <section id="form">
+        <div class="form__content">
+            <h2>CONTÁCTANOS</h2>
+            <form id="form__contact">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                <span id="nombreError" class="error"></span>
+
+                <label for="correo">Correo:</label>
+                <input type="text" name="correo" id="correo" placeholder="Ingrese correo">
+                <span id="correoError" class="error"></span>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Ingrese mensaje"></textarea>
+                <span id="descripcionError" class="error"></span>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+            <p>© Todos los derechos reservados a Vision Project</p>
+    </footer>
+
+
     <script src="js/main.js"></script>
     <script src="js/form.js"></script>
 </body>
